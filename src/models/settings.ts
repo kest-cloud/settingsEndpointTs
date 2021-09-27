@@ -31,14 +31,10 @@ SetttingsSchema.pre('save', async function(next) {
         vehicleModel: Settings.vehicleModel,
         manufacturerYear: Settings.manufacturerYear,
         vehiclePlateNum: Settings.vehiclePlateNum,
-    
-  }; 
-  
-});
+      }; 
+  });
 
 const Settings  = mongoose.model('Settings', SetttingsSchema);
 
 export default Settings ;
 
-
-//export { 'Location', LocationSchema };
